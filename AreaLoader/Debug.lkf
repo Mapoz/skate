@@ -1,0 +1,6 @@
+-z -c -m"areaLoader.map" -o"areaLoader.out" -x -i"c:/program files/ti/c5400/bios/lib" -i"c:/program files/ti/c5400/rtdx/lib" -i"c:/program files/ti/C5400/dsk5416/lib" -i"c:/program files/ti/c5400/xdais/lib" -i"c:/program files/ti/c5400/cgtools/lib" -l"rts.lib"
+"C:\Program Files\ti\bin\utilities\FlashBurn\c5400\PR223\AreaLoader\dspSetup.obj"
+"C:\Program Files\ti\bin\utilities\FlashBurn\c5400\PR223\AreaLoader\FBCmd.obj"
+"C:\Program Files\ti\bin\utilities\FlashBurn\c5400\PR223\AreaLoader\FBTC54.obj"
+"C:\Program Files\ti\bin\utilities\FlashBurn\c5400\PR223\AreaLoader\FBurnCmd.obj"
+"C:\Program Files\ti\bin\utilities\FlashBurn\c5400\PR223\AreaLoader\Link.cmd"

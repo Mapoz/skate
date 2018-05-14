@@ -1,0 +1,205 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC Version 3.83                
+******************************************************************************
+>> Linked Thu Apr 17 15:15:25 2008
+
+OUTPUT FILE NAME:   <areaLoader.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000080
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: RSV1                    00000000   00000080  00000000  R   
+         DARAM                   00000080   00003f80  00001094  RWIX
+         EXT0                    00004000   0000bf80  00000000  R   
+         VECS                    0000ff80   00000080  00000000  RWIX
+         EAP0                    00018000   00008000  00000000  RW  
+
+PAGE  1: MMRS                    00000000   00000060  00000000  RW  
+         SPAD                    00000060   00000020  00000000  RW  
+         DARAM                   00000080   00003f80  00000000  RWIX
+         EXT0                    00004000   0000c000  00000000  R   
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00000080    000005bc     
+                  00000080    0000004a     rts.lib : boot.obj (.text)
+                  000000ca    00000052             : exit.obj (.text)
+                  0000011c    00000007             : _lock.obj (.text)
+                  00000123    00000005     dspSetup.obj (.text)
+                  00000128    00000150     FBCmd.obj (.text)
+                  00000278    0000005d     FBTC54.obj (.text)
+                  000002d5    00000367     FBurnCmd.obj (.text)
+
+.cinit     0    0000063c    0000002d     
+                  0000063c    00000009     rts.lib : exit.obj (.cinit)
+                  00000645    00000006             : _lock.obj (.cinit)
+                  0000064b    00000006     FBTC54.obj (.cinit)
+                  00000651    00000017     FBurnCmd.obj (.cinit)
+                  00000668    00000001     --HOLE-- [fill = 0]
+
+.pinit     0    00000669    00000000     
+
+.switch    0    00000669    00000010     
+                  00000669    00000010     FBCmd.obj (.switch)
+
+.cio       0    00000679    00000000     UNINITIALIZED
+
+.bss       0    0000067a    00000844     UNINITIALIZED
+                  0000067a    0000000e     FBurnCmd.obj (.bss)
+                  00000688    00000811     FBTC54.obj (.bss)
+                  00000e99    00000023     rts.lib : exit.obj (.bss)
+                  00000ebc    00000002             : _lock.obj (.bss)
+
+.sysmem    0    00000ebe    00000000     
+
+.const     0    00000ebe    00000000     UNINITIALIZED
+
+.stack     0    00000ebe    00000256     
+                  00000ebe    00000256     --HOLE-- [fill = beef]
+
+.intvecs   0    0000ff80    00000000     UNINITIALIZED
+
+.data      1    00000060    00000000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+0000067a   .bss
+00000060   .data
+00000080   .text
+00000119   C$$EXIT
+00000425   _BurnFlash
+00000511   _CKSAccumBuf
+0000050e   _CKSGet
+00000506   _CKSSet
+00000350   _EraseFlash
+000002a0   _FlashDisable
+00000296   _FlashEnable
+000002dc   _GetFlashBase
+000002f4   _GetFlashSize
+00000598   _GetFlashVal
+0000034d   _GetNextFlashAddr
+00000318   _GetPageAddr
+0000032a   _GetPageMAURemaining
+0000030f   _GetPageNum
+00000293   _GetProtocolStatusWord
+00000291   _GetProtocolVersionID
+0000033b   _InitFlash
+000005ab   _SendFlashBufToHost
+000002be   _SendI2ToHost
+000002aa   _SendI4ToHost
+000002c7   _SetErrorBits
+00000344   _SetFlashAddr
+000002d5   _SetFlashBase
+000002ed   _SetFlashSize
+00000305   _SetPage
+00000256   __STACK_SIZE
+0000067a   ___bss__
+0000063c   ___cinit__
+00000060   ___data__
+00000060   ___edata__
+00000ebe   ___end__
+0000063c   ___etext__
+ffffffff   ___pinit__
+00000080   ___text__
+00000eba   __cleanup_ptr
+00000ebb   __dtors_ptr
+00000001   __lflags
+00000ebc   __lock
+0000011c   __nop
+0000011d   __register_lock
+00000120   __register_unlock
+00000ebd   __unlock
+00000119   _abort
+000000f7   _atexit
+00000080   _c_int00
+0000013e   _doCommand
+0000028b   _doMessageProc
+00000123   _dspInitFl
+000000ca   _exit
+000003db   _flashWordWrite
+00000278   _main
+00000688   _theMessage
+0000063c   cinit
+00000060   edata
+00000ebe   end
+0000063c   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000060   ___data__
+00000060   ___edata__
+00000060   edata
+00000060   .data
+00000080   ___text__
+00000080   .text
+00000080   _c_int00
+000000ca   _exit
+000000f7   _atexit
+00000119   C$$EXIT
+00000119   _abort
+0000011c   __nop
+0000011d   __register_lock
+00000120   __register_unlock
+00000123   _dspInitFl
+0000013e   _doCommand
+00000256   __STACK_SIZE
+00000278   _main
+0000028b   _doMessageProc
+00000291   _GetProtocolVersionID
+00000293   _GetProtocolStatusWord
+00000296   _FlashEnable
+000002a0   _FlashDisable
+000002aa   _SendI4ToHost
+000002be   _SendI2ToHost
+000002c7   _SetErrorBits
+000002d5   _SetFlashBase
+000002dc   _GetFlashBase
+000002ed   _SetFlashSize
+000002f4   _GetFlashSize
+00000305   _SetPage
+0000030f   _GetPageNum
+00000318   _GetPageAddr
+0000032a   _GetPageMAURemaining
+0000033b   _InitFlash
+00000344   _SetFlashAddr
+0000034d   _GetNextFlashAddr
+00000350   _EraseFlash
+000003db   _flashWordWrite
+00000425   _BurnFlash
+00000506   _CKSSet
+0000050e   _CKSGet
+00000511   _CKSAccumBuf
+00000598   _GetFlashVal
+000005ab   _SendFlashBufToHost
+0000063c   etext
+0000063c   ___etext__
+0000063c   cinit
+0000063c   ___cinit__
+0000067a   ___bss__
+0000067a   .bss
+00000688   _theMessage
+00000eba   __cleanup_ptr
+00000ebb   __dtors_ptr
+00000ebc   __lock
+00000ebd   __unlock
+00000ebe   end
+00000ebe   ___end__
+ffffffff   pinit
+ffffffff   ___pinit__
+
+[61 symbols]

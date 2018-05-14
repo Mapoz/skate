@@ -1,0 +1,23 @@
+---------------------------  areaLoader.pjt - Debug  ---------------------------
+[dspSetup.asm] "c:\program files\ti\c5400\cgtools\bin\cl500" -g -ss -as -i"c:/program files/ti/c5400/dsk5402/include" -@"Debug.lkf" "dspSetup.asm"
+
+[FBCmd.c] "c:\program files\ti\c5400\cgtools\bin\cl500" -g -ss -as -i"c:/program files/ti/c5400/dsk5402/include" -@"Debug.lkf" "FBCmd.c"
+
+[FBTC54.c] "c:\program files\ti\c5400\cgtools\bin\cl500" -g -ss -as -i"c:/program files/ti/c5400/dsk5402/include" -@"Debug.lkf" "FBTC54.c"
+
+[FBurnCmd.c] "c:\program files\ti\c5400\cgtools\bin\cl500" -g -ss -as -i"c:/program files/ti/c5400/dsk5402/include" -@"Debug.lkf" "FBurnCmd.c"
+"fburncmd.c", line 103: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 128: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 134: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 135: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 213: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 214: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 249: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 250: warning: conversion from integer to smaller pointer
+"fburncmd.c", line 251: warning: conversion from integer to smaller pointer
+
+[Linking...] "c:\program files\ti\c5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 9 Warnings, 0 Remarks.

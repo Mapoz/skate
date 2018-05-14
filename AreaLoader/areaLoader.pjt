@@ -1,0 +1,28 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="FBTC54"
+ProjectDir="C:\Program Files\ti\bin\utilities\flashburn\c5400\PR223_EF\AreaLoader\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+
+[Source Files]
+Source="dspSetup.asm"
+Source="FBCmd.c"
+Source="FBTC54.c"
+Source="FBurnCmd.c"
+Source="Link.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -ss -as -i"c:\program files\ti\c5400\dsk5402\include"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v54
+
+["Linker" Settings: "Debug"]
+Options=-c -m"areaLoader.map" -o"areaLoader.out" -x -l"rts.lib"
+
