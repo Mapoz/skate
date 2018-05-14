@@ -25,7 +25,7 @@
 /*****************************************************************************/
 #ifndef _BOARD_H
 #define _BOARD_H
-
+max
 #include <type.h>
 
 #undef  OK
